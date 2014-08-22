@@ -27,9 +27,9 @@
 
     <!-- Add your site or application content here -->
     <div class="container" ng-app="app">
-      <header ng-include="'nav.html'"></header>
+      <header ng-include="'views/nav.html'"></header>
       <div ui-view></div>
-      <footer ng-include="'footer.html'"></footer>
+      <footer ng-include="'views/footer.html'"></footer>
     </div>
 
 
@@ -66,11 +66,9 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="scripts/app.js"></script>
-        <script src="scripts/friends.js"></script>
         <script src="scripts/controllers/aboutCtrl.js"></script>
         <script src="scripts/controllers/homeCtrl.js"></script>
 

@@ -1,11 +1,9 @@
 'use strict';
 
-
 angular
   .module('app')
-  .controller('aboutCtrl', ['$scope', 'Friends', function($scope, Friends) {
-    $scope.title = "About";
-    Friends.get().then(function(data) {
-      $scope.items = data;
-    });
-  }]);
+  .controller('aboutCtrl', ['$scope', function($scope) {
+          $scope.title = "About";
+          $scope.items = ['thing1', 'thing2', 'thing3'];
+        }
+  ])

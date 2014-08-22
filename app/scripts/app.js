@@ -1,15 +1,11 @@
 'use strict';
 
 /**
- * @ngdoc overview
- * @name app
- * @description
- * # app
- *
  * Main module of the application.
  */
+
 angular
-  .module('app', [require('angular-ui-router'))])
+  .module('app', ['ui.router'])
 
   .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
@@ -27,5 +23,5 @@ angular
         url: '/about',
         templateUrl: 'views/about.html',
         controller: 'aboutCtrl'
-      })
-  }])
+      });
+  }]);
